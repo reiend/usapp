@@ -13,7 +13,7 @@ const ASSET_PATH = {
 };
 
 module.exports = {
-  mode: "development",
+  mode: "production",
   entry: "./src/index.js",
 
   output: {
