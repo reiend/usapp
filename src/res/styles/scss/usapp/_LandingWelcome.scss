@@ -1,0 +1,89 @@
+@use "~@libs/reiend/scss/core/layout/breakpoints.scss" as *;
+
+.landing__landing- {
+  &welcome {
+    @include box--xxxsm {
+      width: 270px;
+    }
+
+    @include box--xsm {
+      width: auto;
+      max-width: 550px;
+    }
+
+    @include box--sm {
+      max-width: 550px;
+    }
+
+    @include box--m {
+      transform: scale(0.8);
+    }
+
+    @include box--xlg {
+      transform: scale(1);
+    }
+  }
+}
+
+.slogan {
+  font-family: "Inter", "sans-serif";
+  font-weight: 200;
+  font-style: italic;
+  font-size: 32px;
+  text-align: right;
+  letter-spacing: 0.1rem;
+  margin-bottom: 2rem;
+
+  @include box--xxxsm {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 0;
+    text-align: center;
+  }
+
+  @include box--xsm {
+    font-size: 32px;
+    margin-bottom: 2rem;
+  }
+
+  @include box--m {
+    text-align: right;
+  }
+}
+
+.usapp-logo-primary {
+  max-width: 550px;
+  max-height: 500px;
+
+  @include box--xxxsm {
+    display: none;
+  }
+
+  @include box--xsm {
+    display: block;
+  }
+}
+
+.usapp-logo-secondary {
+  max-width: 550px;
+  max-height: 200px;
+
+  margin-bottom: 2rem;
+
+  @include box--xxxsm {
+    font-size: 16px;
+    transform: translateX(-0.75rem);
+
+    @include box--xxxsm {
+      padding-right: 5rem;
+    }
+
+    @include box--m {
+      padding-right: 0;
+    }
+  }
+
+  @include box--xsm {
+    font-size: 32px;
+  }
+}

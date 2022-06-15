@@ -5,6 +5,7 @@ import App from "./App.js";
 
 const app = Element()
   .createElement("div")
+  .setClass("root")
   .init();
 Element()
   .queryElement("body")

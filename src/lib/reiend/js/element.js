@@ -53,7 +53,6 @@ const Element = () => {
 
       if (isFunctionInstance(elementType)) elementTypeTemp = elementType();
       else elementTypeTemp = elementType;
-
       if (elementCount) {
         for (let i = 0; i < elementCount; i++) {
           elements.push(document.createElement(elementTypeTemp));

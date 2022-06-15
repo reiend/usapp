@@ -1,0 +1,67 @@
+@use "../../core-controllers/components/form" as *;
+
+.form {
+  border-radius: 10px;
+  background-color: $form-background-color;
+  padding: 4.5rem;
+  padding-bottom: 2.5rem;
+  margin-bottom: 2rem;
+  max-width: 600px;
+}
+
+.form__form- {
+  &label {
+    position: relative;
+    span {
+      font-size: 24px;
+      color: $form-label-color;
+
+      position: absolute;
+      top: 50%;
+      transform: translate(20px, -65%);
+      transition: all 100ms linear;
+    }
+  }
+
+  &input {
+    font-size: 24px;
+
+    border-radius: 10px;
+    border: none;
+
+    padding: 1.5rem;
+    margin-bottom: 4rem;
+
+    width: 100%;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &button {
+    font-size: 32px;
+    color: white;
+
+    border: none;
+    border-radius: 10px;
+    background-color: $form-button-background-color;
+
+    padding: 1.25rem;
+    width: 100%;
+
+    cursor: pointer;
+
+    &:hover {
+      filter: contrast(105%);
+    }
+  }
+}
+
+.input--changing {
+  span {
+    top: -3.5rem;
+    transform: translate(0, -65%);
+    color: $form-input-label-changing-color;
+  }
+}
