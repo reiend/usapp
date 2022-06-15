@@ -1,0 +1,53 @@
+@use "../../core-controllers/layout/layout" as *;
+
+@function pxToEm($px) {
+  @return #{$px / $base}em;
+}
+
+@mixin box--xxxsm {
+  @media only screen and (min-width: pxToEm(200)) {
+    @content;
+  }
+}
+
+@mixin box--xxsm {
+  @media only screen and (min-width: pxToEm(400)) {
+    @content;
+  }
+}
+
+@mixin box--xsm {
+  @media only screen and (min-width: pxToEm(600)) {
+    @content;
+  }
+}
+
+@mixin box--sm {
+  @media only screen and (min-width: pxToEm(800)) {
+    @content;
+  }
+}
+
+@mixin box--m {
+  @media only screen and (min-width: pxToEm(1000)) {
+    @content;
+  }
+}
+
+@mixin box--lg {
+  @media only screen and (min-width: pxToEm(1200)) {
+    @content;
+  }
+}
+
+@mixin box--xlg {
+  @media only screen and (min-width: pxToEm(1400)) {
+    @content;
+  }
+}
+
+@mixin box--xxlg {
+  @media only screen and (min-width: pxToEm(1600)) {
+    @content;
+  }
+}

@@ -1,0 +1,41 @@
+@use "./breakpoints" as *;
+
+.box {
+  @include box--xxxsm {
+    max-width: pxToEm(170);
+  }
+
+  @include box--xxsm {
+    max-width: pxToEm(370);
+  }
+
+  @include box--xsm {
+    max-width: pxToEm(570);
+  }
+
+  @include box--sm {
+    max-width: pxToEm(770);
+  }
+
+  @include box--m {
+    max-width: pxToEm(970);
+  }
+
+  @include box--lg {
+    max-width: pxToEm(1170);
+  }
+
+  @include box--xlg {
+    max-width: pxToEm(1370);
+  }
+
+  @include box--xxlg {
+    max-width: pxToEm(1570);
+  }
+
+  &--fluid--xxxsm {
+    @media only screen and (max-width: pxToEm(400)) {
+      max-width: none;
+    }
+  }
+}
