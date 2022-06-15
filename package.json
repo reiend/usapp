@@ -19,6 +19,7 @@
     "@babel/preset-react": "^7.16.7",
     "babel-loader": "^8.2.3",
     "css-loader": "^6.7.1",
+    "dotenv-webpack": "^7.1.0",
     "gh-pages": "^3.2.3",
     "html-webpack-plugin": "^5.5.0",
     "mini-css-extract-plugin": "^2.6.0",
@@ -32,6 +33,8 @@
   },
   "dependencies": {
     "axios": "^0.26.1",
+    "formik": "^2.2.9",
+    "prop-types": "^15.8.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-dotenv": "^0.1.3",

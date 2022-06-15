@@ -3,6 +3,7 @@ const glob = require("glob");
 const HtmlWebpackPlugin = require("html-webpack-plugin"); /* for loading / create html */
 const MinicssExtractPlugin = require("mini-css-extract-plugin"); /* extracting css from js*/
 const PurgecssPlugin = require("purgecss-webpack-plugin"); /* for cleaning unused style */
+const DotEnv = require("dotenv-webpack");
 
 const ROOT_PATH = {
   src: path.resolve(__dirname, `src`),
@@ -104,6 +105,7 @@ module.exports = {
     new PurgecssPlugin({
       paths: glob.sync(`${ROOT_PATH.src}/**/*`, { nodir: true }),
     }),
+    new DotEnv(),
   ],
 
   devServer: {
