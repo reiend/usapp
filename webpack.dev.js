@@ -112,9 +112,6 @@ module.exports = {
     static: {
       directory: path.join(__dirname, "./dist/dev"),
     },
-    proxy: {
-      "/api": "http://localhost:9000",
-    },
     open: true,
     hot: true,
     compress: true,
